@@ -126,6 +126,18 @@ jobs:
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
 
+      - name: Compile Firmware (No Verbose Logs)
+        run: |
+          cd openwrt/
+          make -j$(nproc) > build.log 2>&1 || (tail -n 500 build.log && false)
+
+      - name: Upload Build Log (Optional)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-log
+          path: openwrt/build.log
+
       - name: Compile the OpenWrt
         id: compile
         run: |
