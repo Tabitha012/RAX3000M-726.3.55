@@ -115,3 +115,6 @@ CONFIG_PACKAGE_fdisk=y
 # CONFIG_PACKAGE_wget=y
 # CONFIG_PACKAGE_curl=y
 # CONFIG_PACKAGE_traceroute=y
+
+CONFIG_TARGET_mediatek_filogic_DEVICE_cmcc_rax3000m-nand=y
+CONFIG_PACKAGE_kmod-mtd-rw=m
