@@ -1,9 +1,9 @@
-# === 1. 硬件身份：RAX3000M NAND 版唯一合法身份证 ===
+# === 1. 硬件核心：RAX3000M NAND 版专用锁定 ===
 CONFIG_TARGET_mediatek=y
 CONFIG_TARGET_mediatek_mt7981=y
 CONFIG_TARGET_mediatek_mt7981_DEVICE_jdcloud_rax3000m=y
 
-# === 2. 存储扩容核心驱动 (64G U盘全速跑的基础) ===
+# === 2. 存储扩容：64G U盘全速读写的灵魂 ===
 CONFIG_PACKAGE_block-mount=y
 CONFIG_PACKAGE_kmod-fs-ext4=y
 CONFIG_PACKAGE_kmod-usb-storage=y
@@ -15,11 +15,11 @@ CONFIG_PACKAGE_luci-app-fstab=y
 CONFIG_PACKAGE_e2fsprogs=y
 CONFIG_PACKAGE_fdisk=y
 
-# === 3. 颜值担当：Argon 主题与后台配置 ===
+# === 3. 颜值与配置：Argon 主题巅峰组合 ===
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
 
-# === 4. 14个满血插件核心清单 (基于你的点名) ===
+# === 4. 14个满血插件：你的全能需求清单 ===
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR-TCP=y
@@ -36,5 +36,5 @@ CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-app-attendedsysupgrade=y
 
-# === 5. 系统语言设定 ===
+# === 5. 核心：中文支持与自动依赖补全 ===
 CONFIG_LUCI_LANG_zh_Hans=y
